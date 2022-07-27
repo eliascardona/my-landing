@@ -1,0 +1,248 @@
+body {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+	position: relative;
+	top: 0;
+	padding: 20px 1rem 20px 1rem;
+	color: #fff;
+	background-color: #000;
+	display: grid;
+	place-items: center;
+	border-bottom: 2px solid #3c99dc;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 92%;
+    margin: 0 4% 0 4%;
+    border-radius: 3px;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+}
+
+.cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+ion-icon {
+	font-size: 39px;
+}
+
+.sell-btn {
+	margin: 35px;
+	padding: 0 35px 0 35px;
+	border-style: none;
+	border-radius: 50px;
+	color: #fefefe;
+	background-color: rgb(0, 204, 255);
+	font-family: inherit;
+}
+
+.sell-btn-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 20px 0 50px 0;
+}
+
+.sell-btn span {
+	display: inline-block;
+	font-size: 42px;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+.sell-btn small {
+	display: inline-block;
+	margin-bottom: 12px;
+}
+
+.centered-grid {
+    display: grid;
+	place-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.col-6 {
+    display: grid;
+	grid-template-columns: 50% 50%;
+	column-gap: 15px;
+	margin: 10px;
+	padding: 20px;
+}
+
+.col-6 .extra-gap {
+	column-gap: 25px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.el {
+	display: grid;
+	place-items: center;
+	justify-self: center;
+}
+
+.underline-col {
+    display: grid;
+	grid-template-columns: 50% 50%;
+	column-gap: 10px;
+	margin: 30px;
+	padding: 20px;
+	border: 3px dashed #181818;
+	color: #0a0a0a;
+	background-color: #fefefe;
+}
+
+.iconsBox {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: repeat(5, 20%);
+	column-gap: 10px;
+	padding: 20px;
+	border: 1px solid #3c99dc;
+	border-radius: 7px;
+	color: #fefefe;
+	background-color: #0a0a0a;
+}
+
+/* Media Query for Small Mobile Devices */
+@media (min-width: 300px) and (max-width: 479px) {
+    .col-6 {
+        grid-template-columns: 100%;
+    }
+	.underline-col {
+        grid-template-columns: 100%;
+    }
+
+	.sell-btn ion-icon {
+		font-size: 20px;
+	}
+	
+	.sell-btn span {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: 700;
+		margin-top: 2px;
+		margin-bottom: 4px;
+	}
+	
+	.sell-btn small {
+		display: inline-block;
+		margin-bottom: 6px;
+	}
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .col-6 {
+        grid-template-columns: 100%;
+    }
+	.underline-col {
+        grid-template-columns: 100%;
+    }
+
+	.sell-btn ion-icon {
+		font-size: 25px;
+	}
+	
+	.sell-btn span {
+		display: inline-block;
+		font-size: 30px;
+		font-weight: 700;
+		margin-top: 4px;
+		margin-bottom: 8px;
+	}
+	
+	.sell-btn small {
+		display: inline-block;
+		margin-bottom: 12px;
+	}
+}
+
+/* Media Query for Tablets (till 680 px) */
+@media (min-width: 481px) and (max-width: 679px) {
+    .col-6 {
+        grid-template-columns: 100%;
+    }
+	.underline-col {
+        grid-template-columns: 100%;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 680px) and (max-width: 780px) {
+    .col-6 {
+        grid-template-columns: 100%;
+    }
+	.underline-col {
+        grid-template-columns: 100%;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 781px) and (max-width: 1024px) {
+    .col-6 {
+        grid-template-columns: 50% 50%;
+    }
+	.underline-col {
+        grid-template-columns: 50% 50%;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .col-6 {
+        grid-template-columns: 50% 50%;
+    }
+	.underline-col {
+        grid-template-columns: 50% 50%;
+    }
+}
+ 
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .col-6 {
+        grid-template-columns: 50% 50%;
+    }
+	.underline-col {
+        grid-template-columns: 50% 50%;
+    }
+}
